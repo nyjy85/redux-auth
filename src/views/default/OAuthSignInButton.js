@@ -29,7 +29,7 @@ class OAuthSignInButton extends React.Component {
   }
 
   handleClick () {
-    this.props.dispatch(oAuthSignIn({
+    this.props.dispatch(_oAuthSignIn({
       provider: this.props.provider,
       params: this.props.signInParams,
       endpointKey: this.getEndpoint()
